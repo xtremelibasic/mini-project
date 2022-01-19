@@ -3,7 +3,7 @@ import './App.css';
 import Header from './Header';
 import Footer from './Footer';
 
-function Contact(){
+function Contact(props){
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [subject, setSubject] = useState("");
@@ -35,7 +35,7 @@ function Contact(){
 
     return (
         <div className="page">
-            <Header />
+            <Header goToMenu={props.contactToMenu} goToHomepage={props.contactToHomepage} goToOrders={props.contactToOrders} />
             <form>
                 <input type="text" value={name} onChange={changeName} placeholder='Your name' /><br/>
                 <input type="email" value={email} onChange={changeEmail} placeholder='Your email' /><br/>

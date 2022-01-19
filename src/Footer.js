@@ -8,8 +8,8 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 function Footer(){
     return(
-        <div className="footer">
-            <div>
+        <footer className="footer">
+            <div class="socials">
                 <FontAwesomeIcon icon={faFacebook} />
                 <FontAwesomeIcon icon={faInstagram} />
                 <FontAwesomeIcon icon={faTwitter} />
@@ -17,7 +17,7 @@ function Footer(){
             <div>
                 <p>©2022 Website by Amanda, Bimbola, Sharmaine, Erin</p>
             </div>
-        </div>
+        </footer>
     )
 }
 

@@ -3,14 +3,15 @@ import './App.css';
 import Header from './Header';
 import Footer from './Footer';
 
-function Menu(){
+function Menu(props){
+    
     return (
-        <div className="page">
-            <Header />
-            <button type="button">Starters</button>
-            <button type="button">Mains</button>
-            <button type="button">Deserts</button>
-            <button type="button">Wines</button>
+        <div className="page" >
+            <Header goToHomepage={props.menuToHomepage} goToContact={props.menuToContact} goToOrders={props.menuToOrders} />
+            <button type="button" className="menu-btn" onClick={props.goToStarters}>Starters</button>
+            <button type="button" className="menu-btn" onClick={props.goToMains}>Mains</button>
+            <button type="button" className="menu-btn" onClick={props.goToDeserts}>Deserts</button>
+            <button type="button" className="menu-btn" onClick={props.goToWines}>Wines</button>
             <Footer />
         </div>
     )

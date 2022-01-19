@@ -3,10 +3,10 @@ import './App.css';
 import Header from './Header';
 import Footer from './Footer';
 
-function Orders(){
+function Orders(props){
     return (
         <div className="page">
-            <Header />
+            <Header goToMenu={props.ordersToMenu} goToContact={props.ordersToContact} goToHomepage={props.ordersToHomepage}/>
             <Footer />
         </div>
     )

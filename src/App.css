@@ -1,12 +1,15 @@
 .App {
   /* text-align: center; */
-  display:flex;
-  flex-direction:column;
+  display:block;
+  overflow-x:hidden;
+  /* flex-direction:column; */
 }
 /* General Styles */
 img{
   width:50vw;
-  height:50vw;
+  height:60vw;
+  position:relative;
+  left:25vw;
 }
 
 /* Header Styles */
@@ -21,7 +24,7 @@ img{
 
 }
 header{
-width:105vw;
+width:110vw;
 height:20vw;
 background-image : url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60");
 /* background-repeat: no-repeat; */
@@ -33,7 +36,7 @@ justify-content: space-between;
 padding:2rem;
 }
 nav{
-  margin-right:13vw;
+  margin-right:15vw;
 }
 
 
@@ -48,16 +51,54 @@ li:hover{
   border-radius:50px;
 }
 
-
+.allPages{
+  display:flex;
+  flex-wrap:nowrap
+}
 .primary-pages{
   display:flex;
   flex-wrap:nowrap;
+
 }
 .secondary-pages{
   display:flex;
   flex-wrap:nowrap;
+  position:relative;
+  top: 40vw;
 }
 .page{
   width:100vw;
   height:100vh;
+}
+/*Footer*/
+footer{
+  display:flex;
+  justify-content:space-evenly;
+}
+.socials{
+  display:flex;
+  align-items: center;
+  gap:2vw;
+}
+
+
+.active{
+  background-color:#432518;
+  color:#ffffff;
+  border-radius:50px;
+  border:none;
+  animation-name: bounce-6;
+  animation-timing-function: ease;
+  animation-duration: 2s;
+        animation-iteration-count: infinite;
+}
+
+@keyframes bounce-6 {
+  0%   { transform: scale(1,1)      translateY(0); }
+  10%  { transform: scale(1.1,.9)   translateY(0); }
+  30%  { transform: scale(.9,1.1)   translateY(-100px); }
+  50%  { transform: scale(1.05,.95) translateY(0); }
+  57%  { transform: scale(1,1)      translateY(-7px); }
+  64%  { transform: scale(1,1)      translateY(0); }
+  100% { transform: scale(1,1)      translateY(0); }
 }
