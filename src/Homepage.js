@@ -9,9 +9,28 @@ function Homepage(props){
 
     const [customerOrder, setcustomerOrder] = useState([]);
     function addAutumnSalad (){
-        customerOrder.concat("Autumn Salad")
+        customerOrder.concat("Autumn Salad");
+        setcustomerOrder(customerOrder);
+        console.log(addAutumnSalad)
     }
 
+    function addRavioli (){
+        customerOrder.concat("Ravioli");
+        setcustomerOrder(customerOrder);
+
+    }
+
+    function addScallopsfromtheIsleofSkye (){
+        customerOrder.concat("Scallops From The IsleofSkye");
+        setcustomerOrder(customerOrder);
+
+    }
+    function addRoastVealSweetBread (){
+        customerOrder.concat("Roast Veal Sweetbread");
+        setcustomerOrder(customerOrder);
+
+    }
+//Amanda here is what i have done on the home page , could you comment on where or what add on other components,as i dont want create another components
 //     Autumn salad
 // Ravioli
 // Scallops from the Isle of Skye
@@ -21,11 +40,11 @@ function Homepage(props){
             <Header goToMenu={props.homepageToMenu} goToContact={props.homepageToContact} goToOrders={props.homepageToOrders} />
             <div className="main">
             <img src={Starters} className="Menu" alt="Starters" />
-            <button type="button" onClick={addAutumnSalad}>Add To Order</button>
+            <button type="addAutumnSaladBtn" onClick={addAutumnSalad}>Add To Order</button>
             
-            <button  type="button">Add To Order</button>
-            <button type="button">Add To Order</button>
-            <button type="button">Add To Order</button>
+            <button  type="addRavioliBtn" onClick={addRavioli}>Add To Order</button>
+            <button type="addScallopsfromtheIsleofSkyeBtn"onClick={addScallopsfromtheIsleofSkye}>Add To Order</button>
+            <button type="buttonBtn"onClick={addRoastVealSweetBread}>Add To Order</button>
 
             </div>
             <Footer />
