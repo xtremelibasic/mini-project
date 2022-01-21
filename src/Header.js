@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-
+import OrderBasket from './components/OrderBasket';
 function Header(props){
     return (
         <header>
@@ -13,6 +13,8 @@ function Header(props){
                     <li onClick={props.goToMenu}>Menu</li>
                     <li onClick={props.goToContact}>Contact</li>
                     <li onClick={props.goToOrders}>Orders</li>
+                    <li onClick={props.goToOrders}>OrderBasket</li>
+
                 </ul>
             </nav>
         </header>
