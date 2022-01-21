@@ -11,7 +11,6 @@ function OrderList() {
             <OrderBasket OrderBasket={OrderBasket} />
             <div className="mapping">
                 <ul>
-                <li>hellllllllllo</li>
                     {Orders.map((order) => {
                         return(
                         <li> 
