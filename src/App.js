@@ -8,7 +8,7 @@ import Starters from './Starters';
 import Mains from './Mains';
 import Deserts from './Deserts';
 import Wines from './Wines';
-
+import OrderBasket from './components/OrderBasket'
 function App() {
   const [translateUnits, setTranslateUnits] = useState("");
 
@@ -59,6 +59,7 @@ function App() {
           <Mains goToStarters={goStarters} goToDeserts={goDeserts} goToWines={goWines} />
           <Deserts goToMains={goMains} goToStarters={goStarters} goToWines={goWines}/>
           <Wines goToMains={goMains} goToDeserts={goDeserts} goToStarters={goStarters}/>
+          <OrderBasket/>
         </div>
       </div>
   );

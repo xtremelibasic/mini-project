@@ -44,7 +44,7 @@ li{
   list-style-type:none;
   display:inline;
   padding:.5rem 1rem;
-  color:#ffffff;
+  color:#000000;
 }
 li:hover{
   background-color:#432518;
