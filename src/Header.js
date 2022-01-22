@@ -8,12 +8,11 @@ function Header(props){
             <div className="logo"><h1>BASE</h1></div>
             
             <nav>
-                <ul>
-                    <li onClick={props.goToHomepage}>Home</li>
-                    <li onClick={props.goToMenu}>Menu</li>
-                    <li onClick={props.goToContact}>Contact</li>
-                    <li onClick={props.goToOrders}>Orders</li>
-                    <li onClick={props.goToOrders}>OrderBasket</li>
+                <ul className="navigation-list">
+                    <li className="nav-item" onClick={props.goToHomepage}>Home</li>
+                    <li className="nav-item" onClick={props.goToMenu}>Menu</li>
+                    <li className="nav-item" onClick={props.goToContact}>Contact</li>
+                    <li className="nav-item" onClick={props.goToOrders}>Orders</li>
 
                 </ul>
             </nav>

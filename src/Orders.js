@@ -7,7 +7,7 @@ function Orders(props){
     return (
         <div className="page">
             <Header goToMenu={props.ordersToMenu} goToContact={props.ordersToContact} goToHomepage={props.ordersToHomepage}/>
-            <OrderList/>
+            <OrderList customerOrder={props.customerOrderList}/>
             <Footer />
             <div>
                 </div>

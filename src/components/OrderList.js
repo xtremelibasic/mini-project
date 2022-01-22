@@ -1,25 +1,22 @@
 import React from 'react';
-import data from '../data/order';
-import OrderBasket from './OrderBasket';
 
-function OrderList() {
-    const Orders = data.orders;
-    console.log(Orders);
+function OrderList(props) {
+    console.log(props.customerOrder)
     return (
         <div className="ordersData">
             <h1>Here is your order</h1>
-            <OrderBasket OrderBasket={OrderBasket} />
             <div className="mapping">
+
                 <ul>
-                    {Orders.map((order) => {
+                    {props.customerOrder !== undefined ? props.customerOrder.map((order) => {
+                        console.log()
                         return(
-                        <li> 
-                            {order.first_name}
+                        <li>
+                            {order}
                         </li>
-                        // <OrderList {Orders.first_name}/>
-                        // console.log(order);
+
                         )
-                    })}
+                    }): ""}
                 </ul>
             </div>
         </div>
